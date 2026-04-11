@@ -1,0 +1,10 @@
+{
+  "sensor_map": {
+    "gesture": "apds9960",
+    "motion": "mpu6050",
+    "distance": "apds9960"
+  },
+  "fallback": {
+    "sensor": "gesture"
+  }
+}

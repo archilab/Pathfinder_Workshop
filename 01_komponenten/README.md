@@ -1,0 +1,35 @@
+# 01 · Komponenten
+
+Der Workshop verwendet fünf Hardware-Komponenten. Du musst nicht verstehen, wie sie intern funktionieren — aber es hilft zu wissen, was jede davon tut und wofür du sie einsetzen kannst.
+
+---
+
+## Überblick
+
+| Komponente | Typ | Funktion |
+|---|---|---|
+| [ESP32 Pico](./esp32_pico.md) | Mikrocontroller | Das Gehirn — führt den Code aus |
+| [APDS9960](./apds9960.md) | Sensor | Erkennt Gesten und Nähe |
+| [MPU6050](./mpu6050.md) | Sensor | Misst Bewegung und Neigung |
+| [NeoPixel Strip](./neopixel.md) | Aktor | 6 individuell steuerbare RGB-LEDs |
+| [Servo](./servo.md) | Aktor | Dreht sich auf einen bestimmten Winkel |
+
+---
+
+## Sensoren und Aktoren
+
+Der GPT unterscheidet zwischen zwei Arten von Komponenten:
+
+**Sensoren** nehmen etwas aus der Welt auf — eine Bewegung, eine Geste, eine Neigung — und wandeln es in eine Zahl zwischen `0.0` und `1.0` um.
+
+**Aktoren** reagieren auf eine solche Zahl — sie leuchten heller oder dunkler, drehen sich weiter oder weniger weit.
+
+Das ist das grundlegende Prinzip aller generierten Sketches.
+
+---
+
+## Verkabelung
+
+![Breadboard Übersicht](./bilder/BreadboardWiring.jpg)
+
+Alle Pins sind im GPT fest eingebaut. Du musst keine Pin-Nummern kennen oder angeben.
