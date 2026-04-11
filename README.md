@@ -81,7 +81,11 @@ Beispielhafte Anwendungen:
 
 ## Grundprinzip
 
-Der Ablauf ist einfach:
+Technisch lässt sich jede Installation als Kette fassen: **Sensor** liefert Daten, dazwischen liegt **Transformation** (Mapping, Logik, Schwellen), **Aktoren** setzen das sichtbar oder beweglich um — genau so strukturieren auch sinnvolle Prompts die Anfrage an den GPT.
+
+![Prompt-Logik: Input (Sensor), Transformation (Mapping / Logik), Output (Aktoren)](./prompt_logic_diagram.svg)
+
+Der Ablauf im Workshop ist einfach:
 
 1. Eine Idee oder Interaktion beschreiben  
 2. Mit dem GPT-System daraus Code erzeugen  
