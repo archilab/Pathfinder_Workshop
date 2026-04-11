@@ -40,7 +40,7 @@ Kein manuelles Programmieren. Kein Verständnis von Syntax notwendig.
 
 ## Hardware des Workshops
 
-- ESP32 Pico (Mikrocontroller)
+- ESP32-PICO-D4 (Mikrocontroller, SiP 7×7 mm)
 - APDS9960 (Gestensensor)
 - MPU6050 (Bewegungssensor)
 - NeoPixel LED-Strip (6 Pixel)

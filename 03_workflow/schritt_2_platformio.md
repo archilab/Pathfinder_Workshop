@@ -35,7 +35,7 @@ Am einfachsten: einen der fertigen Code-Ordner aus `04_beispiele/` kopieren und 
 
 1. In VSCode das PlatformIO-Symbol (Ameisenkopf) anklicken
 2. **New Project** → Name eingeben
-3. Board: `Espressif ESP32 Dev Module`
+3. Board: `Espressif ESP32 Dev Module` (suche nach `esp32dev`)
 4. Framework: `Arduino`
 5. Location: beliebiger Ordner → **Finish**
 6. Die vom GPT generierten Dateien ersetzen `src/main.cpp` und `platformio.ini`
