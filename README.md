@@ -177,7 +177,7 @@ Kein manuelles Programmieren. Kein Verständnis von Syntax notwendig.
 
 ## Im Workshop verwendete Hardware
 
-- ESP32-PICO-D4 (Mikrocontroller, SiP 7×7 mm)
+- ESP32-PICO-KIT (Espressif Entwicklungsboard · ESP32-PICO-D4 · WLAN + BT eingebaut)
 - APDS9960 (Gestensensor)
 - MPU6050 (Bewegungs- und Lagesensor)
 - NeoPixel RGBW LED-Streifen (6 Pixel)

@@ -8,7 +8,7 @@ Der Workshop verwendet fünf Hardware-Komponenten. Du musst nicht verstehen, wie
 
 | Komponente | Typ | Funktion |
 |---|---|---|
-| [ESP32-PICO-D4](./esp32_pico.md) | Mikrocontroller | Das Gehirn — führt den Code aus |
+| [ESP32-PICO-KIT](./esp32_pico.md) | Mikrocontroller | Das Gehirn — führt den Code aus |
 | [APDS9960](./apds9960.md) | Sensor | Erkennt Gesten und Nähe |
 | [MPU6050](./mpu6050.md) | Sensor | Misst Bewegung und Neigung |
 | [NeoPixel Strip](./neopixel.md) | Aktor | 6 individuell steuerbare RGB-LEDs |

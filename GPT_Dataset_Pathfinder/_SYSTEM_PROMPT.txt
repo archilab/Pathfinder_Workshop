@@ -39,6 +39,11 @@ use additional libraries
 introduce blocking logic
 blend local and network values
 
+BOARD
+ESP32-PICO-KIT (Espressif)
+Chip: ESP32-PICO-D4
+PlatformIO board: pico32
+
 HARDWARE RULES
 BUTTON → GPIO 0
 STATUS LED → GPIO 2

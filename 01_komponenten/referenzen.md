@@ -1,6 +1,6 @@
 # Libraries & Referenzen
 
-Alle im Workshop verwendeten Bibliotheken, ihre Quellen und weiterführende Dokumentation auf einen Blick. Verwendet wird der **ESP32-PICO-D4** (SiP, 7×7 mm), PlatformIO Board-ID: `pico32`.
+Alle im Workshop verwendeten Bibliotheken, ihre Quellen und weiterführende Dokumentation auf einen Blick. Verwendet wird das **ESP32-PICO-KIT** (Espressif Entwicklungsboard mit ESP32-PICO-D4 SiP), PlatformIO Board-ID: `pico32`.
 
 ---
 
@@ -109,8 +109,10 @@ lib_deps =
 
 | Komponente | Datenblatt |
 |---|---|
-| **ESP32-PICO-D4** | [Espressif ESP32-PICO-D4 Datasheet · PDF](https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf) |
-| ESP32 Technical Reference Manual | [Espressif ESP32 TRM · PDF](https://www.espressif.com/sites/default/files/documentation/esp32_technical_reference_manual_en.pdf) |
+| **ESP32-PICO-KIT** Getting Started Guide | [docs.espressif.com · Pico-Kit](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-pico-kit.html) |
+| ESP32-PICO-KIT Schaltplan v4.1 | [dl.espressif.com · PDF](https://dl.espressif.com/dl/schematics/esp32-pico-kit-v4_schematic.pdf) |
+| ESP32-PICO-D4 Datenblatt (Chip) | [espressif.com · PDF](https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf) |
+| ESP32 Technical Reference Manual | [espressif.com · PDF](https://www.espressif.com/sites/default/files/documentation/esp32_technical_reference_manual_en.pdf) |
 | APDS-9960 | [Broadcom APDS-9960 Datasheet · PDF](https://docs.broadcom.com/doc/AV02-4191EN) |
 | MPU-6050 | [TDK InvenSense MPU-6050 Datasheet · PDF](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf) |
 | WS2812B (NeoPixel) | [WS2812B Datasheet · PDF](https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf) |
