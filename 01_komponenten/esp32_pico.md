@@ -44,21 +44,19 @@ Das ESP32-PICO-KIT hat einen **CP2102N USB-UART-Brückenchip** eingebaut. Damit 
 
 ## Das Board im Detail
 
-```
-                    USB-Anschluss (Micro-USB)
-                          │
-          ┌───────────────┴───────────────┐
-          │  CP2102N      ESP32-PICO-D4   │
-          │  USB-UART     ┌─────────────┐ │
-          │  Brücke       │  Dual-Core  │ │
-          │               │  240 MHz    │ │
- Reset ──►│  [RST]        │  4 MB Flash │ │
- Boot  ──►│  [BOOT]       │  WLAN + BT  │ │
-          │               └─────────────┘ │
-          │  [LED]  GPIO2                  │
-          └───────────────────────────────┘
-          20 Pins links   ·   20 Pins rechts
-```
+Die folgenden Abbildungen stammen aus der **Espressif**-Dokumentation zum ESP32-PICO-KIT und zeigen Layout (v4.1) sowie die Pinbelegung (v4).
+
+### Draufsicht · Board-Layout (v4.1)
+
+![ESP32-PICO-KIT v4.1 — Draufsicht, Bauteilseite (Layout)](./bilder/esp32-pico-kit-v4.1-f-layout.jpeg)
+
+*Quelle: [Espressif Systems](https://www.espressif.com/) — Herstellerdokumentation zum ESP32-PICO-KIT.*
+
+### Pinbelegung (v4)
+
+![ESP32-PICO-KIT v4 — Pinbelegung](./bilder/esp32-pico-kit-v4-pinout.png)
+
+*Quelle: [Espressif Systems](https://www.espressif.com/) — Herstellerdokumentation zum ESP32-PICO-KIT.*
 
 **Reset-Knopf (RST):** Startet das Board neu, ohne es zu trennen — nützlich wenn der Code hängt.
 
