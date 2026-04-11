@@ -30,6 +30,16 @@ Das ist das grundlegende Prinzip aller generierten Sketches.
 
 ## Verkabelung
 
-![Breadboard Übersicht](./bilder/BreadboardWiring.jpg)
+![Komponenten annotiert](./bilder/komponenten_annotiert.png)
+
+![Schaltplan](./bilder/schaltplan.png)
 
 Alle Pins sind im GPT fest eingebaut. Du musst keine Pin-Nummern kennen oder angeben.
+
+---
+
+## Referenzen & Libraries
+
+Eine vollständige Übersicht aller verwendeten Bibliotheken, Datasheets und Quellen findest du unter:
+
+**→ [Libraries & Referenzen](./referenzen.md)**
