@@ -2,6 +2,8 @@
 
 Alle im Workshop verwendeten Bibliotheken, ihre Quellen und weiterführende Dokumentation auf einen Blick. Verwendet wird das **ESP32-PICO-KIT** (Espressif Entwicklungsboard mit ESP32-PICO-D4 SiP), PlatformIO Board-ID: `pico32`.
 
+**Physische Verschaltung:** Steckplatine und Gesamt-Schaltplan → [01 Komponenten · Verkabelung](./README.md#verkabelung).
+
 ---
 
 ## PairLink — Das Kernprotokoll

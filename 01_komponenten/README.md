@@ -30,9 +30,11 @@ Das ist das grundlegende Prinzip aller generierten Sketches.
 
 ## Verkabelung
 
-![Komponenten annotiert](./bilder/komponenten_annotiert.png)
+Steckplatine und Schaltplan zeigen alle Bauteile und Verbindungen des vollständigen Workshop-Sets (dieselben Abbildungen wie in der [Projekt-README](../README.md)).
 
-![Schaltplan](./bilder/schaltplan.png)
+![Steckplatine — Aufbau aller Workshop-Komponenten](../pathfinder_Steckplatine.svg)
+
+![Schaltplan — Verschaltung aller Workshop-Komponenten](../pathfinder_Steckplatine_circuit.svg)
 
 Alle Pins sind im GPT fest eingebaut. Du musst keine Pin-Nummern kennen oder angeben.
 

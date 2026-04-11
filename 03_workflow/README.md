@@ -34,7 +34,7 @@ Der GPT liefert zwei Dateien. Wo kommen sie hin? Wie sieht ein gültiges Projekt
 
 ## [Schritt 3 · Auf den Controller übertragen](./schritt_3_deploy.md)
 
-Upload starten, Serial Monitor lesen, häufige Probleme erkennen und lösen.
+Upload starten, Serial Monitor lesen, häufige Probleme erkennen und lösen. Bei Hardware-Problemen helfen [Steckplatine & Schaltplan](../01_komponenten/README.md#verkabelung) zum Abgleich der Verkabelung.
 
 ---
 

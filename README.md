@@ -183,6 +183,14 @@ Kein manuelles Programmieren. Kein Verständnis von Syntax notwendig.
 - NeoPixel RGBW LED-Streifen (6 Pixel)
 - Servomotor (0-180 Grad Rotation)
 
+### Steckplatine und Schaltplan
+
+Der **Aufbau auf der Steckplatine** und der **Schaltplan** zeigen dasselbe Workshop-Set: alle Bauteile und ihre Verbindungen. Details zu einzelnen Komponenten stehen in [01 Komponenten](./01_komponenten/README.md).
+
+![Steckplatine — Aufbau mit allen Workshop-Komponenten](./pathfinder_Steckplatine.svg)
+
+![Schaltplan — Verschaltung aller Workshop-Komponenten](./pathfinder_Steckplatine_circuit.svg)
+
 Alle Komponenten sind vorkonfiguriert. Pins und Bibliotheken sind fest im GPT eingebaut — es muss nichts konfiguriert werden.
 
 ---

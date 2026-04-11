@@ -26,3 +26,7 @@ Damit dein Computer den ESP32 über USB erkennt, braucht er einen speziellen Tre
 ## [Schritt 4 · Erste Verbindung testen](./03_erster_upload.md)
 
 Ein einfacher Test bestätigt, dass alles funktioniert — bevor du mit dem eigentlichen Workshop-Inhalt anfängst.
+
+---
+
+**Hardware noch nicht verkabelt?** Steckplatine und Schaltplan für das Workshop-Set: [01 Komponenten · Verkabelung](../01_komponenten/README.md#verkabelung) (auch in der [Projekt-README](../README.md#steckplatine-und-schaltplan)).

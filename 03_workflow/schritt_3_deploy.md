@@ -50,7 +50,7 @@ Wenn der Sketch PairLink verwendet und zwei Boards miteinander kommunizieren sol
 | Upload läuft, aber `FAILED` | Falscher Port oder Board | Port in `platformio.ini` manuell setzen |
 | Bibliothek fehlt | Kein Internet | Einmalig mit Internet verbinden |
 | Status-LED blinkt dauerhaft | WLAN nicht erreichbar | WLAN-Name und Passwort im Code prüfen |
-| Sensor reagiert nicht | Verkabelung | SDA/SCL-Pins prüfen |
+| Sensor reagiert nicht | Verkabelung | SDA/SCL-Pins prüfen; Aufbau mit [Steckplatine & Schaltplan](../01_komponenten/README.md#verkabelung) abgleichen |
 
 ---
 
