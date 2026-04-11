@@ -44,7 +44,7 @@ So wird sichtbar, wie KI technische Barrieren senken kann, ohne die gestalterisc
 
 ---
 
-## Warum das relevant ist
+## Relevants
 
 KI verändert aktuell grundlegend, wie interaktive Systeme entworfen und entwickelt werden.
 
@@ -61,7 +61,7 @@ Zugleich verschiebt sich die Rolle der Gestaltenden: weg von der reinen Implemen
 
 ---
 
-## Was im Workshop passiert
+## Was passiert im Workshop
 
 Im Workshop entstehen kleine vernetzte interaktive Systeme mit:
 
@@ -170,15 +170,15 @@ Kein manuelles Programmieren. Kein Verständnis von Syntax notwendig.
 
 ---
 
-## Hardware des Workshops
+## Im Workshop verwendete Hardware
 
 - ESP32-PICO-D4 (Mikrocontroller, SiP 7×7 mm)
 - APDS9960 (Gestensensor)
-- MPU6050 (Bewegungssensor)
-- NeoPixel LED-Strip (6 Pixel)
-- Servo
+- MPU6050 (Bewegungs- und Lagesensor)
+- NeoPixel RGBW LED-Streifen (6 Pixel)
+- Servomotor (0-180 Grad Rotation)
 
-Alle Komponenten sind vorkonfiguriert. Pins und Bibliotheken sind fest im GPT eingebaut — du musst nichts konfigurieren.
+Alle Komponenten sind vorkonfiguriert. Pins und Bibliotheken sind fest im GPT eingebaut — es muss nichts konfiguriert werden.
 
 ---
 
