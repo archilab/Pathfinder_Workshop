@@ -24,6 +24,8 @@ Der gesamte Prozess — von der Idee bis zur laufenden Installation — besteht 
 
 Wie beschreibe ich meine Idee so, dass der GPT versteht was ich will? Was muss ich angeben, was nicht? Mit Prompt-Vorlagen und Beispielen.
 
+**→ [Beispielprompts (Einstieg bis Experiment)](./pathfinder_prompts.md)** — stufenweise Prompt-Ideen zum Kopieren, Variieren und Kombinieren.
+
 ## [Schritt 2 · Code in PlatformIO einsetzen](./schritt_2_platformio.md)
 
 Der GPT liefert zwei Dateien. Wo kommen sie hin? Wie sieht ein gültiges Projekt aus? Was muss geprüft werden bevor der Upload startet?

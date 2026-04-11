@@ -41,6 +41,12 @@ Die Anfrage muss nicht technisch sein. Der GPT übersetzt künstlerische Beschre
 
 ---
 
+## Weitere Prompt-Ideen
+
+Für eine **größere Sammlung** stufenweise aufgebauter Beispiele (von direkter Interaktion bis Experiment) siehe **[Beispielprompts](./pathfinder_prompts.md)**.
+
+---
+
 ## Was der GPT ausgibt
 
 Nach der Anfrage liefert der GPT immer zwei Dateien:

@@ -86,8 +86,9 @@ Der Ablauf ist einfach:
 1. Eine Idee oder Interaktion beschreiben  
 2. Mit dem GPT-System daraus Code erzeugen  
 3. Den Code auf den ESP32 übertragen  
-4. Testen, verändern, verbessern  
-5. Verhalten, Ergebnis und Logik reflektieren  
+4. Testen, verändern, verbessern
+5. Vernetzen
+6. Verhalten, Ergebnis und Logik reflektieren 
 
 ---
 
@@ -164,7 +165,7 @@ Kein manuelles Programmieren. Kein Verständnis von Syntax notwendig.
 | [00 Setup](./00_setup/README.md) | VSCode, PlatformIO und Treiber installieren |
 | [01 Komponenten](./01_komponenten/README.md) | Alle Bauteile erklärt |
 | [02 PairLink](./02_pairlink/README.md) | Das Netzwerkprotokoll des Workshops |
-| [03 Workflow](./03_workflow/README.md) | Der 3-Schritt-Prozess im Detail |
+| [03 Workflow](./03_workflow/README.md) | Der 3-Schritt-Prozess im Detail · [Beispielprompts](./03_workflow/pathfinder_prompts.md) |
 | [04 Beispiele](./04_beispiele/README.md) | Drei vollständige Workflow-Durchläufe |
 | [05 Custom GPT](./05_custom_gpt/README.md) | Wie der GPT funktioniert — und wie du deinen eigenen baust |
 
