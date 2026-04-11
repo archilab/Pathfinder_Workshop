@@ -43,7 +43,8 @@ Die Anfrage muss nicht technisch sein. Der GPT übersetzt künstlerische Beschre
 
 ## Weitere Prompt-Ideen
 
-Für eine **größere Sammlung** stufenweise aufgebauter Beispiele (von direkter Interaktion bis Experiment) siehe **[Beispielprompts](./pathfinder_prompts.md)**.
+- **[Beispielprompts](./pathfinder_prompts.md)** — stufenweise Beispiele (Einstieg bis Experiment) zum Kopieren und Variieren  
+- **[Prompt-Patterns / Baukasten](./prompt_patterns_baukasten.md)** — Muster und Bausteine (Input → Transformation → Output), um eigene Prompts systematisch zu formulieren  
 
 ---
 

@@ -1,6 +1,6 @@
 # Pathfinder Workshop – Beispielprompts
 
-**Kontext:** Diese Sammlung ergänzt [Schritt 1 · GPT-Anfrage formulieren](./schritt_1_gpt_anfrage.md) (dort: Vorlage und gut/schlecht-Beispiele). Vollständige Workshop-Durchläufe mit exaktem Prompt-Text stehen in [04 · Beispiele](../04_beispiele/README.md) je unter `prompt.md`.
+**Kontext:** Diese Sammlung ergänzt [Schritt 1 · GPT-Anfrage formulieren](./schritt_1_gpt_anfrage.md) (dort: Vorlage und gut/schlecht-Beispiele). Wer lieber mit **Mustern** statt fertigen Sätzen arbeitet: [Prompt-Patterns / Baukasten](./prompt_patterns_baukasten.md). Vollständige Workshop-Durchläufe mit exaktem Prompt-Text stehen in [04 · Beispiele](../04_beispiele/README.md) je unter `prompt.md`.
 
 ---
 

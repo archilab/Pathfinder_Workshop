@@ -165,7 +165,7 @@ Kein manuelles Programmieren. Kein Verständnis von Syntax notwendig.
 | [00 Setup](./00_setup/README.md) | VSCode, PlatformIO und Treiber installieren |
 | [01 Komponenten](./01_komponenten/README.md) | Alle Bauteile erklärt |
 | [02 PairLink](./02_pairlink/README.md) | Das Netzwerkprotokoll des Workshops |
-| [03 Workflow](./03_workflow/README.md) | Der 3-Schritt-Prozess im Detail · [Beispielprompts](./03_workflow/pathfinder_prompts.md) |
+| [03 Workflow](./03_workflow/README.md) | Der 3-Schritt-Prozess im Detail · [Beispielprompts](./03_workflow/pathfinder_prompts.md) · [Prompt-Baukasten](./03_workflow/prompt_patterns_baukasten.md) |
 | [04 Beispiele](./04_beispiele/README.md) | Drei vollständige Workflow-Durchläufe |
 | [05 Custom GPT](./05_custom_gpt/README.md) | Wie der GPT funktioniert — und wie du deinen eigenen baust |
 
