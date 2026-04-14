@@ -1,5 +1,15 @@
 # VSCode + PlatformIO installieren
 
+## Git installieren (Voraussetzung)
+
+Falls auf deinem System noch kein **Git** installiert ist, installiere es zuerst — ohne Git kann PlatformIO viele Bibliotheken (z.B. von GitHub) nicht automatisch laden.
+
+**Installation:** [git-scm.com · Install](https://git-scm.com/install/) — Betriebssystem wählen und der Anleitung folgen.
+
+*(Hinweis: Das ist die **Git**-Kommandozeilen-Software. Sie ist nicht dasselbe wie die GitHub-Website oder ein separater „GitHub-Client“ — für diesen Workshop reicht der offizielle Git-Installer.)*
+
+---
+
 ## 1. Visual Studio Code
 
 VSCode ist der Editor, in dem du den vom GPT generierten Code einfügst und den Upload startest.

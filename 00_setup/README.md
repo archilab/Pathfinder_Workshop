@@ -1,23 +1,26 @@
 # 00 · Setup
 
-Bevor du den ersten Code auf den ESP32 übertragen kannst, brauchst du zwei Programme und einen Treiber. Die Einrichtung dauert ca. 10–15 Minuten und muss nur einmal gemacht werden.
+Bevor du den ersten Code auf den ESP32 übertragen kannst, brauchst du **Git**, zwei Programme (Editor + PlatformIO) und einen USB-Treiber. Die Einrichtung dauert ca. 10–15 Minuten und muss nur einmal gemacht werden.
+
+**Git** muss auf dem Rechner installiert sein — PlatformIO nutzt es, um Bibliotheken u.a. von GitHub zu beziehen. Falls noch nicht vorhanden: **[Git installieren](https://git-scm.com/install/)** (Windows, macOS, Linux — offizielle Anleitung).
 
 ---
 
 ## Übersicht
 
 ```
-Schritt 1  →  VSCode installieren
-Schritt 2  →  PlatformIO installieren (als VSCode-Erweiterung)
-Schritt 3  →  USB-Treiber installieren
-Schritt 4  →  Verbindung testen
+Voraussetzung  →  Git installieren (falls noch nicht vorhanden)
+Schritt 1      →  VSCode installieren
+Schritt 2      →  PlatformIO installieren (als VSCode-Erweiterung)
+Schritt 3      →  USB-Treiber installieren
+Schritt 4      →  Verbindung testen
 ```
 
 ---
 
 ## [Schritt 1 & 2 · VSCode + PlatformIO](./01_vscode_platformio.md)
 
-VSCode ist der Code-Editor. PlatformIO ist die Erweiterung darin, die den ESP32 versteht — sie lädt automatisch alle benötigten Bibliotheken und überträgt den Code auf den Controller.
+Enthält auch die **Git-Installation**, falls du sie noch nicht erledigt hast. VSCode ist der Code-Editor. PlatformIO ist die Erweiterung darin, die den ESP32 versteht — sie lädt automatisch alle benötigten Bibliotheken und überträgt den Code auf den Controller.
 
 ## [Schritt 3 · USB-Treiber](./02_treiber.md)
 
