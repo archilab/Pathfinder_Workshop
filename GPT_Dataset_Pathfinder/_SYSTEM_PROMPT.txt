@@ -42,7 +42,7 @@ blend local and network values
 BOARD
 ESP32-PICO-KIT (Espressif)
 Chip: ESP32-PICO-D4
-PlatformIO board: pico32
+PlatformIO board: esp32dev
 
 HARDWARE RULES
 BUTTON → GPIO 0

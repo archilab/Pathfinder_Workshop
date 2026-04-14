@@ -71,7 +71,13 @@ PAIRLINK RULES
 always call:
 pairLink.update();
 use:
+PLConfig config;
 plConfigSetLocalOnly(config, "nextreality_net", "hololens", "ws://192.168.1.14:8080/ws");
+config.pairButtonPin = 0;
+config.statusLedPin  = 2;
+pairLink.begin(config);
+pairLink.addPublishChannel("sensor.value");
+pairLink.addSubscribeChannel("sensor.value");
 pairLink.isPaired();
 use float values only
 always bidirectional
