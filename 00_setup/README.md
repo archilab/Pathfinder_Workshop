@@ -9,7 +9,6 @@ Bevor du Code auf den **ESP32** überträgst, richtest du einmalig deinen Comput
 | Teil | Wofür |
 |------|--------|
 | **Git** | Wird von **PlatformIO** gebraucht, um Bibliotheken von GitHub zu laden. |
-| **GitHub-Client** | Damit du dieses **Workshop-Repository** auf deinen Rechner holst (klonen oder als ZIP — siehe unten). |
 | **Visual Studio Code (VS Code)** | Der Editor für deinen Code. |
 | **PlatformIO** | Erweiterung in VS Code: baut das Projekt, lädt Bibliotheken, lädt den Code auf den ESP32. |
 | **USB-Treiber** | Damit Windows/macOS den ESP32 am USB-Kabel erkennt. |
@@ -26,23 +25,7 @@ Bevor du Code auf den **ESP32** überträgst, richtest du einmalig deinen Comput
 
 ---
 
-## Schritt 2 — GitHub-Client installieren
-
-Damit du **dieses Repository** (den Workshop-Code) auf deinen Computer bekommst, brauchst du einen **GitHub-Client**. Ohne Repository-Ordner kannst du die Beispielprojekte nicht öffnen.
-
-**Empfohlen für Einsteiger: GitHub Desktop**
-
-1. Öffne: [https://desktop.github.com/](https://desktop.github.com/)
-2. Installiere **GitHub Desktop** (Windows oder macOS).
-3. Melde dich mit deinem **GitHub-Konto** an (kostenlos anlegbar auf [github.com](https://github.com)).
-4. **Repository klonen:**  
-   **File → Clone repository** → URL des Workshops einfügen (die Adresse, die deine Lehrkraft oder das README nennt, z. B. `https://github.com/…/Pathfinder_Workshop.git`) → einen Ordner auf deinem Rechner wählen → **Clone**.
-
-**Alternative ohne Desktop:** Auf der GitHub-Webseite des Repositories auf **Code → Download ZIP** klicken, ZIP entpacken — dann hast du die Dateien, aber keine automatischen Updates. Für den Kurs reicht das oft aus.
-
----
-
-## Schritt 3 — Visual Studio Code installieren
+## Schritt 2 — Visual Studio Code installieren
 
 VS Code ist der **Editor**, in dem du Code bearbeitest und Uploads startest.
 
@@ -51,7 +34,7 @@ VS Code ist der **Editor**, in dem du Code bearbeitest und Uploads startest.
 
 ---
 
-## Schritt 4 — PlatformIO in VS Code installieren
+## Schritt 3 — PlatformIO in VS Code installieren
 
 **PlatformIO** ist eine **Erweiterung** in VS Code. Sie kümmert sich um Bibliotheken, Compiler und den **Upload zum ESP32**.
 
@@ -67,7 +50,7 @@ Nach der Installation siehst du links das **PlatformIO-Symbol** (Kopf einer Amei
 
 ---
 
-## Schritt 5 — USB-Treiber installieren
+## Schritt 4 — USB-Treiber installieren
 
 Der ESP32 spricht über einen **USB-zu-UART-Chip** mit dem PC. Dafür braucht das Betriebssystem einen **Treiber**.
 
@@ -96,13 +79,13 @@ Wenn kein **COM-Port** erscheint: **Geräte-Manager** öffnen — unter **Anschl
 
 ---
 
-## Schritt 6 — Erstes Projekt öffnen und testen
+## Schritt 5 — Erstes Projekt öffnen und testen
 
 So prüfst du, ob **alles zusammenspielt**, bevor du mit dem Workshop startest.
 
 ### Projektordner öffnen
 
-1. Im geklonten Repository navigiere zu:  
+1. Lege den **Workshop-Ordner** auf deinen Rechner (z. B. per `git clone` oder **Code → Download ZIP** auf GitHub). Navigiere darin zu:  
    `04_beispiele/beispiel_01_geste_licht/code/`
 2. In VS Code: **Datei → Ordner öffnen** → genau diesen Ordner **`code`** wählen (der enthält die `platformio.ini`).
 3. PlatformIO erkennt das Projekt und lädt beim ersten Mal die Bibliotheken — wieder **einige Minuten** warten.
@@ -126,8 +109,8 @@ So prüfst du, ob **alles zusammenspielt**, bevor du mit dem Workshop startest.
 | Symptom | Mögliche Ursache | Was tun |
 |--------|------------------|--------|
 | Build meldet fehlende Bibliotheken | **Git** nicht installiert oder nicht im PATH | Schritt 1 wiederholen, VS Code neu starten |
-| Kein Repository / keine Ordner | **GitHub**-Repo nicht geklont | Schritt 2: GitHub Desktop oder ZIP |
-| Kein USB-Port sichtbar | Treiber oder Kabel | Schritt 5, anderes USB-Kabel (Daten) |
+| Kein Projektordner | Workshop-Dateien fehlen | Repository klonen oder ZIP von GitHub entpacken |
+| Kein USB-Port sichtbar | Treiber oder Kabel | Schritt 4, anderes USB-Kabel (Daten) |
 | `No device found on port` | Falscher Port oder ESP32 nicht verbunden | Port in PlatformIO manuell wählen |
 | Upload schlägt fehl | Falscher Port | Unten in der Leiste anderen COM-Port wählen |
 | Sehr langer erster Build | Normal | Internet anlassen, 2–5 Minuten warten |
