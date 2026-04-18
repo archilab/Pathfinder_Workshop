@@ -44,7 +44,7 @@ So wird sichtbar, wie KI technische Barrieren senken kann, ohne die gestalterisc
 
 ---
 
-## Relevants
+## Relevanz
 
 KI verändert aktuell grundlegend, wie interaktive Systeme entworfen und entwickelt werden.
 
