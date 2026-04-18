@@ -20,8 +20,7 @@ Bevor du Code auf den **ESP32** überträgst, richtest du einmalig deinen Comput
 **Git** ist die Basis-Software für Versionskontrolle. **PlatformIO braucht Git**, um viele Bibliotheken automatisch von GitHub zu beziehen — ohne Git schlagen Builds oft fehl.
 
 1. Öffne: [https://git-scm.com/install/](https://git-scm.com/install/)
-2. Wähle dein Betriebssystem (Windows, macOS, Linux) und folge der Anleitung.
-3. Nach der Installation: Terminal öffnen und testen: `git --version` — es soll eine Versionsnummer erscheinen.
+2. Wähle dein Betriebssystem (Windows, macOS, Linux) und folge der Anleitung. Bestätige alle vorgeschlagenen Optionen während dem Installationsprozess.
 
 ---
 
