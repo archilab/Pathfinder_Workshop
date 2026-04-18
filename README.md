@@ -166,7 +166,7 @@ Kein manuelles Programmieren. Kein Verständnis von Syntax notwendig.
 
 | Abschnitt | Inhalt |
 |---|---|
-| [00 Setup](./00_setup/README.md) | VSCode, PlatformIO und Treiber installieren |
+| [00 Setup](./00_setup/README.md) | Git, GitHub-Client, VS Code, PlatformIO, Treiber — Schritt für Schritt |
 | [01 Komponenten](./01_komponenten/README.md) | Alle Bauteile erklärt |
 | [02 PairLink](./02_pairlink/README.md) | Das Netzwerkprotokoll des Workshops |
 | [03 Workflow](./03_workflow/README.md) | Der 3-Schritt-Prozess im Detail · [Beispielprompts](./03_workflow/pathfinder_prompts.md) · [Prompt-Baukasten](./03_workflow/prompt_patterns_baukasten.md) |
