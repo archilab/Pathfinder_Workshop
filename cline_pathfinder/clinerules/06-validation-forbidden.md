@@ -1,0 +1,28 @@
+---
+description: Validation checklist and forbidden patterns
+alwaysApply: true
+---
+
+# Validation and forbidden patterns
+
+## Required in every PairLink sketch
+
+- `pairLink.update()` in `loop()`.
+- `pairLink.isPaired()` when logic depends on pairing (typical pattern).
+- `"sensor.value"` publish and subscribe registered if the sketch uses that channel.
+- `platformio.ini` includes **all** required `lib_deps` (see `04-platformio-dependencies.md`).
+
+## Forbidden (unless user explicitly asks)
+
+- **`analogRead`** — workshop meta rule.
+- **`actor.value`** — invalid channel naming for this workshop.
+- Extra **libraries** not in the strict list.
+- **Blocking** long `delay()` in the main loop when it breaks PairLink timing or gesture sampling — prefer non-blocking patterns.
+
+## Routing semantics (optional)
+
+Sensor aliases for intent: see [`GPT_Dataset_Pathfinder/config-routing.json`](../GPT_Dataset_Pathfinder/config-routing.json) (`gesture` → APDS9960, `motion` → MPU6050, `distance` → APDS9960 proximity; default fallback `gesture`).
+
+## Sample code priority
+
+Dataset samples (`GPT_Dataset_Pathfinder/sample-*.cpp`) are **examples**. If they ever conflict with these rules or `system-prompt.txt`, **follow the rules**, not the sample.

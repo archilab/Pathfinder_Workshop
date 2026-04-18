@@ -34,3 +34,13 @@ Generierte Projekte verwenden weiterhin **`src/main.cpp`** und **`platformio.ini
 5. **Examples / template:** `template-platformio.ini`, `sample-gesture-apds9960.cpp`, `sample-mpu6050-servo.cpp`, `sample-neopixel-actor.cpp`, `sample-swarm-node.cpp`, `sample-smooth-node.cpp`, `config-routing.json`
 
 Together this lets the model resolve **Adafruit / ESP32Servo / ArduinoJson / ArduinoWebsockets** APIs without live web access, while treating sample scripts as reference sketches, not overrides for system rules.
+
+---
+
+## Cline.dev (VS Code agent)
+
+Optimized, copy-paste rules for [Cline](https://cline.bot): **[`../cline_pathfinder/`](../cline_pathfinder/)** — copy `cline_pathfinder/clinerules` → `.clinerules` at the repo root (see `cline_pathfinder/README.md`).
+
+## Claude Code (terminal / IDE agent)
+
+Optimized instructions and `.claude/rules` for [Claude Code](https://code.claude.com/docs): **[`../claude_pathfinder/`](../claude_pathfinder/)** — copy `claude_pathfinder/CLAUDE.md` to the repo root and `claude_pathfinder/.claude/rules/*.md` into `.claude/rules/` (see `claude_pathfinder/README.md`).
