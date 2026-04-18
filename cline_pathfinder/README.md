@@ -1,17 +1,16 @@
 # Cline — Pathfinder / Folkwang ESP32 workshop
 
-Self-contained bundle for [Cline](https://cline.bot): short **`.cline/rules/*.md`** (YAML `alwaysApply`), **`CLINE.md`** (priority and scope), **`system-prompt.txt`**, and **`.context/`** with library API docs, samples, template, and routing — same layout as **`claude_pathfinder/`** (`.cline/rules` ↔ `.claude/rules`).
+Self-contained bundle for [Cline](https://cline.bot): **`CLINE.md`**, **`.cline/rules/*.md`** (YAML `alwaysApply`, including **`07-generator-contract.md`** — former system prompt), and **`.context/`** with library API docs, samples, template, and routing — same layout as **`claude_pathfinder/`** (`.cline/rules` ↔ `.claude/rules`).
 
 ## Contents
 
 | Path | Purpose |
 |------|---------|
 | `CLINE.md` | Project instructions and source priority (mirror of `claude_pathfinder/CLAUDE.md`) |
-| `system-prompt.txt` | Canonical generator prompt |
-| `.cline/rules/00–06-*.md` | Cline rules with `description` + `alwaysApply: true` |
+| `.cline/rules/00–07-*.md` | Cline rules + **`07-generator-contract.md`** (FolkwangESP-GPT identity & output contract) |
 | **`.context/`** | `context-*.md`, `rules-meta-layer.md`, `rules-validation.md`, `sample-*.cpp`, `template-platformio.ini`, `config-routing.json` |
 
-Markdown links in **`.cline/rules/*.md`** use `../../system-prompt.txt` and `../../.context/...` (two levels up from `.cline/rules/` to `cline_pathfinder/`).
+Markdown links in **`.cline/rules/*.md`** use **`../../.context/...`** (two levels up from `.cline/rules/` to `cline_pathfinder/`).
 
 ## Install
 
@@ -41,8 +40,8 @@ Copy-Item -Force cline_pathfinder\.cline\rules\*.md .clinerules\
 |-------|--------|
 | `CLINE.md` | `CLAUDE.md` |
 | `.cline/rules/*.md` | `.claude/rules/*.md` |
-| `.context/`, `system-prompt.txt` | same |
+| `.context/` | `.context/` |
 
 ## Updating this bundle
 
-When files change in **`GPT_Dataset_Pathfinder/`** or **`claude_pathfinder/`**, re-copy **`.context/`** and **`system-prompt.txt`** from `claude_pathfinder/` (or from the dataset), then adjust **`.cline/rules/`** only if workshop rules changed.
+When files change in **`GPT_Dataset_Pathfinder/`** or **`claude_pathfinder/`**, re-copy **`.context/`** from `claude_pathfinder/` (or from the dataset), copy **`07-generator-contract.md`** from **`claude_pathfinder/.claude/rules/`** if the contract changed, then adjust other **`.cline/rules/`** only if workshop rules diverge.

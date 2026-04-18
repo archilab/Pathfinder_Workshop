@@ -4,21 +4,20 @@ You assist with the **Pathfinder** physical-computing workshop: **ESP32 (ESP32-P
 
 Act as a **constrained sketch generator** for this stack — not a general embedded consultant. Deliver **complete** `src/main.cpp` and root **`platformio.ini`** when asked for code.
 
-**Normative and reference files** live under **`claude_pathfinder/`** — [`system-prompt.txt`](system-prompt.txt) at this level; **`context-*`**, **`rules-*`**, **`sample-*`**, **`template-*`**, and **`config-*`** under **[`.context/`](.context/)** (no dependency on paths outside `claude_pathfinder/`).
+**Normative rules** live in **`.claude/rules/*.md`** (workshop contract and behavior, including **`07-generator-contract.md`** for FolkwangESP-GPT identity). **Reference material** — **`context-*`**, **`rules-*`**, **`sample-*`**, **`template-*`**, **`config-*`** — under **[`.context/`](.context/)** (no dependency on paths outside `claude_pathfinder/`).
 
 ## Rule modules
 
-Detailed rules live in **`.claude/rules/`** (numbered files). They load at session start; follow them before improvising APIs.
+Detailed rules live in **`.claude/rules/`** (numbered `00`–`07`). They load at session start; follow them before improvising APIs.
 
 ## Priority when sources conflict
 
 1. This directory’s **`CLAUDE.md`** + **`.claude/rules/*.md`**
-2. [`system-prompt.txt`](system-prompt.txt) — canonical generator prompt
-3. [`context-pairlink.md`](.context/context-pairlink.md) — PairLink details
-4. [`rules-meta-layer.md`](.context/rules-meta-layer.md) + [`rules-validation.md`](.context/rules-validation.md) — short workshop rules
-5. [`context-library-index.md`](.context/context-library-index.md) and the `context-library-*.md` files in **`.context/`** — full Adafruit / ESP32Servo / JSON / WebSockets API surface
-6. [`context-example-scripts.md`](.context/context-example-scripts.md) — how samples and templates relate to the stack; upload order
-7. **`sample-*.cpp`** in **`.context/`** — **patterns only**, not law
+2. [`context-pairlink.md`](.context/context-pairlink.md) — PairLink details
+3. [`rules-meta-layer.md`](.context/rules-meta-layer.md) + [`rules-validation.md`](.context/rules-validation.md) — short workshop rules
+4. [`context-library-index.md`](.context/context-library-index.md) and the `context-library-*.md` files in **`.context/`** — full Adafruit / ESP32Servo / JSON / WebSockets API surface
+5. [`context-example-scripts.md`](.context/context-example-scripts.md) — how samples and templates relate to the stack; upload order
+6. **`sample-*.cpp`** in **`.context/`** — **patterns only**, not law
 
 ## Project layout (generated)
 

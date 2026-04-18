@@ -1,14 +1,13 @@
 # Claude Code — Pathfinder / Folkwang ESP32 workshop
 
-Self-contained bundle for [Claude Code](https://code.claude.com/docs): instructions, rules, **normative prompts**, **library API context** (`context-library-*.md`), **example sketches** (`sample-*.cpp`), PairLink context, and PlatformIO template — **all paths stay inside `claude_pathfinder/`** (no `../` to other folders).
+Self-contained bundle for [Claude Code](https://code.claude.com/docs): **`CLAUDE.md`**, **`.claude/rules/*.md`** (including **`07-generator-contract.md`** — former system prompt), **library API context** (`context-library-*.md`), **example sketches** (`sample-*.cpp`), PairLink context, and PlatformIO template — **all paths stay inside `claude_pathfinder/`** (no `../` to other folders).
 
 ## Contents (this directory)
 
 | Path | Purpose |
 |------|---------|
 | `CLAUDE.md` | Short project instructions and source priority |
-| `.claude/rules/00–06-*.md` | Focused agent rules (hardware, PairLink, validation, …) |
-| `system-prompt.txt` | Canonical generator prompt (repo at this level) |
+| `.claude/rules/00–07-*.md` | Agent rules + **`07-generator-contract.md`** (FolkwangESP-GPT identity & output contract) |
 | **`.context/`** | Bundled workshop knowledge (see below) |
 
 ### `.context/` (library context, rules, samples, template, routing)
@@ -41,7 +40,7 @@ Keep the **`claude_pathfinder/`** folder in your repository (or copy it wholesal
      @claude_pathfinder/CLAUDE.md
      ```
 
-   - **B — Copy:** copy `claude_pathfinder/CLAUDE.md` to the repo root and merge with any existing `CLAUDE.md`, **or** duplicate the whole `claude_pathfinder` tree so `CLAUDE.md` sits next to `system-prompt.txt` and the **`.context/`** subtree (same layout as here).
+   - **B — Copy:** copy `claude_pathfinder/CLAUDE.md` to the repo root and merge with any existing `CLAUDE.md`, **or** duplicate the whole `claude_pathfinder` tree (same layout as here).
 
 Start a new session or use `/memory` to verify what loaded.
 
@@ -54,4 +53,4 @@ Copy-Item -Force claude_pathfinder\.claude\rules\*.md .claude\rules\
 
 ## Updating this bundle
 
-When you change the workshop files in the repository’s `GPT_Dataset_Pathfinder/` tree, re-copy the affected files into **`claude_pathfinder/.context/`** (and `system-prompt.txt` here if it changed), then adjust `CLAUDE.md` or `.claude/rules/` only if the workshop contract changed.
+When you change the workshop files in the repository’s `GPT_Dataset_Pathfinder/` tree, re-copy the affected files into **`claude_pathfinder/.context/`**, then adjust **`CLAUDE.md`** or **`.claude/rules/`** (including **`07-generator-contract.md`**) if the generator contract changed.

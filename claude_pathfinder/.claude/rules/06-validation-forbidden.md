@@ -20,4 +20,4 @@ Sensor aliases for intent: see [`config-routing.json`](../../.context/config-rou
 
 ## Sample code priority
 
-Bundled `sample-*.cpp` files in **`claude_pathfinder/.context/`** are **examples**. If they ever conflict with these rules or `system-prompt.txt`, **follow the rules**, not the sample.
+Bundled `sample-*.cpp` files in **`claude_pathfinder/.context/`** are **examples**. If they ever conflict with **`.claude/rules/*.md`** (including **`07-generator-contract.md`**), **follow the rules**, not the sample.

@@ -1,19 +1,19 @@
 # Example scripts — Custom GPT integration (read-first)
 
-**Pfad (Pathfinder Claude- / Cline-Bundle):** Diese Datei liegt in **`*/.context/`** (z. B. `claude_pathfinder/.context/` oder `cline_pathfinder/.context/`). **`system-prompt.txt`** liegt eine Ebene darüber: **`../system-prompt.txt`**. Die übrigen hier genannten Dateinamen beziehen sich auf dieselben Ordner wie diese Datei (`.context/`), sofern nicht anders angegeben.
+**Pfad (Pathfinder Claude-Bundle):** Diese Datei liegt in **`claude_pathfinder/.context/`**. Das frühere monolithische **`system-prompt.txt`** ist in **`../.claude/rules/07-generator-contract.md`** (plus **`00`–`06`**) aufgeteilt. Die übrigen hier genannten Dateinamen liegen in **`.context/`**, sofern nicht anders angegeben.
 
-Die folgenden Dateien sind **Referenzbeispiele** (Muster für Struktur, PairLink-Nutzung und Sensordaten). Sie sind **keine** normativen Spezifikationen: Verhalten, Pins und API-Details sind in **`system-prompt.txt`**, **`context-pairlink.md`**, **`rules-meta-layer.md`**, **`rules-validation.md`** und den **`context-library-*.md`** verbindlich, wenn es Abweichungen gibt.
+Die folgenden Dateien sind **Referenzbeispiele** (Muster für Struktur, PairLink-Nutzung und Sensordaten). Sie sind **keine** normativen Spezifikationen: Verhalten, Pins und API-Details sind in **`.claude/rules/*.md`** (v. a. **`07-generator-contract.md`**), **`context-pairlink.md`**, **`rules-meta-layer.md`**, **`rules-validation.md`** und den **`context-library-*.md`** verbindlich, wenn es Abweichungen gibt.
 
 ---
 
 ## Priorität im Wissens-Stack (höher = zuerst anwenden)
 
-1. **`system-prompt.txt`** — Rollen, Pflicht-Includes, `lib_deps`, feste Pins, Ausgabeformat  
+1. **`.claude/rules/*.md`** — Rollen, Pflicht-Includes, `lib_deps`, feste Pins, Ausgabeformat (Kern: **`07-generator-contract.md`**)  
 2. **`context-pairlink.md`** — PairLink-API, Kanäle, `pairLink.update()`, Konfiguration  
 3. **`rules-meta-layer.md`** + **`rules-validation.md`** — Workshop-Regeln (Default-Sensor, verbotene Muster, Checks)  
 4. **`context-library-index.md`** → **`context-library-*.md`** — vollständige Bibliotheks-APIs  
 5. **Beispiel-Skripte** (`sample-*.cpp`) + **`template-platformio.ini`** — illustrieren typische Kombinationen; bei Konflikten **nicht** gegen 1–4 verletzen  
-6. **`config-routing.json`** — optionale Sensor-Alias-Logik für Routing/Defaults (kein Ersatz für System Prompt)
+6. **`config-routing.json`** — optionale Sensor-Alias-Logik für Routing/Defaults (kein Ersatz für das Regelwerk)
 
 ---
 
@@ -26,9 +26,9 @@ Die folgenden Dateien sind **Referenzbeispiele** (Muster für Struktur, PairLink
 | **`sample-neopixel-actor.cpp`** | NeoPixel-Aktor + PairLink (hier Demo-Eingang `random`) | `context-library-adafruit-neopixel.md` |
 | **`sample-swarm-node.cpp`** | APDS9960 + Servo, Netzwerkwert und lokaler Sensor kombiniert | APDS9960 + ESP32Servo + `context-pairlink.md` |
 | **`sample-smooth-node.cpp`** | APDS9960 + gleitender Wert über empfangene `sensor.value` | APDS9960 + `context-pairlink.md` |
-| **`template-platformio.ini`** | **Template** für `lib_deps` und `env` (Workshop-Set) | Spiegel mit `system-prompt.txt` / Index; generierte Projekte nutzen **`src/main.cpp`**, nicht diese Dateinamen |
+| **`template-platformio.ini`** | **Template** für `lib_deps` und `env` (Workshop-Set) | Spiegel mit **`.claude/rules/`** / Index; generierte Projekte nutzen **`src/main.cpp`**, nicht diese Dateinamen |
 | **`rules-meta-layer.md`** | Kurzregeln (Default-Sensor, Kanal, keine `analogRead` …) | Vor Skript-„Kreativität“ anwenden |
-| **`config-routing.json`** | Alias → Sensor-Typ (`gesture`→`apds9960`, `motion`→`mpu6050`, …) | Nur semantische Zuordnung; Hardware bleibt aus System Prompt |
+| **`config-routing.json`** | Alias → Sensor-Typ (`gesture`→`apds9960`, `motion`→`mpu6050`, …) | Nur semantische Zuordnung; Hardware bleibt aus dem Regelwerk |
 
 ---
 
@@ -37,13 +37,13 @@ Die folgenden Dateien sind **Referenzbeispiele** (Muster für Struktur, PairLink
 - **Ausgabe-Dateiname:** Immer **`main.cpp`** (und `platformio.ini`) im generierten Projekt — die Dataset-Samples heißen `sample-*.cpp` nur als **Referenz**.  
 - **Beispiele als Muster:** Struktur übernehmen (`setup`/`loop`, `pairLink.begin`, Kanäle, `isPaired`-Zweig), aber **Pins, Normalisierung und Sensor-Setup** an Aufgabe und `context-library-*` anpassen.  
 - **I²C:** Wenn ein Sample `Wire.begin(21,22)` weglässt, trotzdem gemäß Workshop **`Wire.begin(21, 22)`** in echten Sketches setzen, sofern I²C-Sensoren genutzt werden.  
-- **`rules-validation.md`:** z. B. `analogRead` verboten (außer explizit angefordert) — auch wenn ein älteres Beispiel `analogWrite` o. Ä. zeigt: **Validierungsregeln** und System Prompt haben Vorrang für neue Generierung.
+- **`rules-validation.md`:** z. B. `analogRead` verboten (außer explizit angefordert) — auch wenn ein älteres Beispiel `analogWrite` o. Ä. zeigt: **Validierungsregeln** und **`.claude/rules/`** haben Vorrang für neue Generierung.
 
 ---
 
 ## Empfohlene Upload-Reihenfolge (Custom GPT „Knowledge“)
 
-1. `../system-prompt.txt` (im Claude-Bundle: eine Ebene über `.context/`)  
+1. **`../.claude/rules/07-generator-contract.md`** + bei Bedarf **`00`–`06`** aus **`../.claude/rules/`** (oder für das ZIP-Dataset weiterhin **`GPT_Dataset_Pathfinder/system-prompt.txt`**, falls ihr das klassische Ein-File-Prompt nutzt)  
 2. `rules-meta-layer.md`, `rules-validation.md`  
 3. `context-pairlink.md`  
 4. `context-library-index.md` + alle `context-library-*.md`  
