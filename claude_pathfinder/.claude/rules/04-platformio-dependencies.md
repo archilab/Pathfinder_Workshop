@@ -39,4 +39,4 @@ monitor_speed = 115200
 lib_deps = ...
 ```
 
-Copy from [`GPT_Dataset_Pathfinder/template-platformio.ini`](../../GPT_Dataset_Pathfinder/template-platformio.ini) when creating new projects.
+Copy from [`template-platformio.ini`](../../.context/template-platformio.ini) when creating new projects.

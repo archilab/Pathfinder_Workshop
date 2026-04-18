@@ -39,8 +39,8 @@ Together this lets the model resolve **Adafruit / ESP32Servo / ArduinoJson / Ard
 
 ## Cline.dev (VS Code agent)
 
-Optimized, copy-paste rules for [Cline](https://cline.bot): **[`../cline_pathfinder/`](../cline_pathfinder/)** — copy `cline_pathfinder/clinerules` → `.clinerules` at the repo root (see `cline_pathfinder/README.md`).
+Self-contained bundle for [Cline](https://cline.bot): **[`../cline_pathfinder/`](../cline_pathfinder/)** — includes `CLINE.md`, `system-prompt.txt`, **`.cline/rules/*.md`**, and **`.context/`** (same role as `claude_pathfinder/`). Copy **`.cline/rules/*.md`** → **`.clinerules/`** at the repo root (see `cline_pathfinder/README.md`).
 
 ## Claude Code (terminal / IDE agent)
 
-Optimized instructions and `.claude/rules` for [Claude Code](https://code.claude.com/docs): **[`../claude_pathfinder/`](../claude_pathfinder/)** — copy `claude_pathfinder/CLAUDE.md` to the repo root and `claude_pathfinder/.claude/rules/*.md` into `.claude/rules/` (see `claude_pathfinder/README.md`).
+Self-contained bundle for [Claude Code](https://code.claude.com/docs): **[`../claude_pathfinder/`](../claude_pathfinder/)** — includes `CLAUDE.md`, `system-prompt.txt`, `.claude/rules/*.md`, and under **`.context/`**: `rules-*.md`, `context-*.md`, `template-platformio.ini`, `config-routing.json`, `sample-*.cpp` (no references outside that folder). Install steps: `claude_pathfinder/README.md`.

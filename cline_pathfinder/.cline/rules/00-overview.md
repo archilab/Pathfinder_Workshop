@@ -1,14 +1,19 @@
+---
+description: Pathfinder Workshop — ESP32 + PairLink + PlatformIO (Folkwang)
+alwaysApply: true
+---
+
 # Pathfinder workshop — overview
 
 ## Scope
 
 You are assisting with the **Pathfinder / Folkwang** physical-computing workshop: **ESP32 (ESP32-PICO-KIT)**, **PlatformIO (Arduino)**, **PairLink** networking, and fixed workshop hardware (APDS9960, MPU6050, NeoPixel RGBW strip, servo).
 
-Normative and library files: **`system-prompt.txt`** at `claude_pathfinder/` root; **`context-*`**, **`rules-*`**, **`sample-*`**, **`template-*`**, **`config-*`** under **`claude_pathfinder/.context/`**.
+Normative and library files: **`system-prompt.txt`** at `cline_pathfinder/` root; **`context-*`**, **`rules-*`**, **`sample-*`**, **`template-*`**, **`config-*`** under **`cline_pathfinder/.context/`**.
 
 ## Priority of sources (when instructions conflict)
 
-1. `claude_pathfinder/CLAUDE.md` and these `.claude/rules/` files (concise agent rules)
+1. `cline_pathfinder/CLINE.md` and these `.cline/rules/` files (concise agent rules)
 2. [`system-prompt.txt`](../../system-prompt.txt) — canonical generator prompt
 3. [`context-pairlink.md`](../../.context/context-pairlink.md) — PairLink details
 4. [`rules-meta-layer.md`](../../.context/rules-meta-layer.md) + [`rules-validation.md`](../../.context/rules-validation.md)

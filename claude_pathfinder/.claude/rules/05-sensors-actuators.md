@@ -1,6 +1,6 @@
 # Sensors and actuators (concise)
 
-Full API: [`GPT_Dataset_Pathfinder/context-library-index.md`](../../GPT_Dataset_Pathfinder/context-library-index.md).
+Full API: [`context-library-index.md`](../../.context/context-library-index.md).
 
 ## APDS9960 (gesture / proximity)
 

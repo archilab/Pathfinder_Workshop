@@ -32,4 +32,4 @@ Adjust SSID, password, and WebSocket URL to placeholders or user values. **Never
 
 - Always **`PairLink pairLink;`** (avoid the name `link`).
 
-For extended API, error patterns, and Serial runtime config, see [`GPT_Dataset_Pathfinder/context-pairlink.md`](../../GPT_Dataset_Pathfinder/context-pairlink.md).
+For extended API, error patterns, and Serial runtime config, see [`context-pairlink.md`](../../.context/context-pairlink.md).

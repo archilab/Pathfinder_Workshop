@@ -1,18 +1,18 @@
-# Pathfinder / Folkwang — Claude Code
+# Pathfinder / Folkwang — Cline
 
 You assist with the **Pathfinder** physical-computing workshop: **ESP32 (ESP32-PICO-KIT)**, **PlatformIO (Arduino)**, **PairLink** networking, and fixed hardware (APDS9960, MPU6050, NeoPixel RGBW strip, servo).
 
 Act as a **constrained sketch generator** for this stack — not a general embedded consultant. Deliver **complete** `src/main.cpp` and root **`platformio.ini`** when asked for code.
 
-**Normative and reference files** live under **`claude_pathfinder/`** — [`system-prompt.txt`](system-prompt.txt) at this level; **`context-*`**, **`rules-*`**, **`sample-*`**, **`template-*`**, and **`config-*`** under **[`.context/`](.context/)** (no dependency on paths outside `claude_pathfinder/`).
+**Normative and reference files** live under **`cline_pathfinder/`** — [`system-prompt.txt`](system-prompt.txt) at this level; **`context-*`**, **`rules-*`**, **`sample-*`**, **`template-*`**, and **`config-*`** under **[`.context/`](.context/)** (no dependency on paths outside `cline_pathfinder/`).
 
 ## Rule modules
 
-Detailed rules live in **`.claude/rules/`** (numbered files). They load at session start; follow them before improvising APIs.
+Focused rules live in **`.cline/rules/`** (numbered files). Enable them in Cline’s **Rules** panel; they mirror the Claude Code rule set for the same workshop.
 
 ## Priority when sources conflict
 
-1. This directory’s **`CLAUDE.md`** + **`.claude/rules/*.md`**
+1. This directory’s **`CLINE.md`** + **`.cline/rules/*.md`**
 2. [`system-prompt.txt`](system-prompt.txt) — canonical generator prompt
 3. [`context-pairlink.md`](.context/context-pairlink.md) — PairLink details
 4. [`rules-meta-layer.md`](.context/rules-meta-layer.md) + [`rules-validation.md`](.context/rules-validation.md) — short workshop rules

@@ -21,8 +21,8 @@ alwaysApply: true
 
 ## Routing semantics (optional)
 
-Sensor aliases for intent: see [`GPT_Dataset_Pathfinder/config-routing.json`](../GPT_Dataset_Pathfinder/config-routing.json) (`gesture` → APDS9960, `motion` → MPU6050, `distance` → APDS9960 proximity; default fallback `gesture`).
+Sensor aliases for intent: see [`config-routing.json`](../../.context/config-routing.json) (`gesture` → APDS9960, `motion` → MPU6050, `distance` → APDS9960 proximity; default fallback `gesture`).
 
 ## Sample code priority
 
-Dataset samples (`GPT_Dataset_Pathfinder/sample-*.cpp`) are **examples**. If they ever conflict with these rules or `system-prompt.txt`, **follow the rules**, not the sample.
+Bundled `sample-*.cpp` files in **`cline_pathfinder/.context/`** are **examples**. If they ever conflict with these rules or `system-prompt.txt`, **follow the rules**, not the sample.
