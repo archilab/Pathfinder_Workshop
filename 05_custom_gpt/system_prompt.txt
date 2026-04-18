@@ -85,6 +85,20 @@ always bidirectional
 VALUE MODEL
 ALL VALUES → float (0.0 – 1.0)
 
+DATASET KNOWLEDGE (OFFLINE)
+Use context-library-index.md and context-library-*.md for API usage of
+lib_deps libraries (APDS9960, MPU6050, NeoPixel, ESP32Servo,
+Unified Sensor, ArduinoJson v7, ArduinoWebsockets). context-pairlink.md
+governs networking. Prefer these over guessing APIs.
+
+EXAMPLE SCRIPTS (REFERENCE ONLY)
+sample-gesture-apds9960.cpp, sample-mpu6050-servo.cpp, sample-neopixel-actor.cpp,
+sample-swarm-node.cpp, sample-smooth-node.cpp, and template-platformio.ini in the
+dataset are illustrative patterns. context-example-scripts.md defines priority:
+system prompt + PairLink context + rules-meta-layer + rules-validation + library
+contexts override example code if they conflict. Generated projects must use
+main.cpp and a full platformio.ini per LIB_DEPS, not necessarily the sample filenames.
+
 GENERAL CONTEXT
 use internet research and deep understanding to get
 optimal context to the connected components, libraries and sensor scopes

@@ -9,3 +9,28 @@ Includes:
 - enforced PlatformIO dependencies
 
 Build-safe and beginner-safe.
+
+## Filename scheme (this folder)
+
+| Präfix | Bedeutung | Beispiele |
+|--------|-----------|-----------|
+| `system-` | System Prompt für das Custom GPT | `system-prompt.txt` |
+| `rules-` | Kurze normative Workshop-Regeln | `rules-meta-layer.md`, `rules-validation.md` |
+| `context-` | Wissens-/API-Kontext | `context-pairlink.md`, `context-library-index.md`, `context-library-*.md`, `context-example-scripts.md` |
+| `config-` | Maschinenlesbare Konfiguration | `config-routing.json` |
+| `template-` | Vorlage für Teilnehmer-Projekte | `template-platformio.ini` |
+| `sample-` | Beispiel-Sketches (kein `main.cpp`) | `sample-gesture-apds9960.cpp`, … |
+
+Generierte Projekte verwenden weiterhin **`src/main.cpp`** und **`platformio.ini`** — die Dataset-Dateinamen sind nur für Upload und Navigation.
+
+---
+
+## Custom GPT knowledge — recommended bundle
+
+1. **Rules (normative):** `system-prompt.txt`, `rules-meta-layer.md`, `rules-validation.md`  
+2. **PairLink:** `context-pairlink.md`  
+3. **Libraries (offline API):** `context-library-index.md` + all `context-library-*.md`  
+4. **How examples fit in:** **`context-example-scripts.md`** — maps `sample-*.cpp`, `template-platformio.ini`, `config-routing.json` to the stack above; lists upload order. Example `sample-*.cpp` files are **patterns only**; the manifest coordinates them.  
+5. **Examples / template:** `template-platformio.ini`, `sample-gesture-apds9960.cpp`, `sample-mpu6050-servo.cpp`, `sample-neopixel-actor.cpp`, `sample-swarm-node.cpp`, `sample-smooth-node.cpp`, `config-routing.json`
+
+Together this lets the model resolve **Adafruit / ESP32Servo / ArduinoJson / ArduinoWebsockets** APIs without live web access, while treating sample scripts as reference sketches, not overrides for system rules.

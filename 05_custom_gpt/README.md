@@ -10,6 +10,8 @@ Der Custom GPT "FOLWANG-PairLink-starter" ist kein allgemeiner Assistent — er 
 
 **→ [Custom GPT Dataset herunterladen](../GPT_Dataset_Pathfinder.zip)** — System Prompt, Beispiel-Sketches und Konfigurationsdateien als ZIP
 
+**→ [context-example-scripts.md](../GPT_Dataset_Pathfinder/context-example-scripts.md)** — Priorität von Regeln vs. Beispiel-Skripten (`sample-*.cpp`, `template-platformio.ini`) und empfohlene Upload-Reihenfolge ins GPT-Wissen
+
 ---
 
 ## Inhalt dieses Abschnitts

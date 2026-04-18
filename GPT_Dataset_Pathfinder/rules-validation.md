@@ -4,7 +4,7 @@ Required:
 - pairLink.update()
 - pairLink.isPaired()
 - sensor.value publish + subscribe
-- platformio.ini with required libraries and libraries in platformio.ini template
+- `template-platformio.ini` (bzw. generiertes `platformio.ini`) mit allen erforderlichen `lib_deps`
 
 Forbidden:
 - analogRead
