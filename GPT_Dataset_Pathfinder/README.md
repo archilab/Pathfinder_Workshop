@@ -20,8 +20,11 @@ Build-safe and beginner-safe.
 | `config-` | Maschinenlesbare Konfiguration | `config-routing.json` |
 | `template-` | Vorlage für Teilnehmer-Projekte | `template-platformio.ini` |
 | `sample-` | Beispiel-Sketches (kein `main.cpp`) | `sample-gesture-apds9960.cpp`, … |
+| `one-shot-` | Alles-in-einem, komprimiert (Paste / langer Kontext) | `one-shot-prompt.md` |
 
 Generierte Projekte verwenden weiterhin **`src/main.cpp`** und **`platformio.ini`** — die Dataset-Dateinamen sind nur für Upload und Navigation.
+
+**Kurzstart:** [`one-shot-prompt.md`](./one-shot-prompt.md) bündelt System Prompt, Regeln, `platformio.ini`, Routing, PairLink-Kern und Library-Cheat-Sheet; für vollständige APIs weiterhin `context-library-*.md` und `context-pairlink.md` nutzen.
 
 ---
 
