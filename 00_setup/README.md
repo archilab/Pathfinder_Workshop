@@ -31,6 +31,8 @@ VS Code ist der **Editor**, in dem du Code bearbeitest und Uploads startest.
 1. Öffne: [https://code.visualstudio.com](https://code.visualstudio.com)
 2. Installer für dein Betriebssystem herunterladen und installieren.
 
+**Optional:** Wer die Oberfläche **weniger überladen** möchte, kann [VS Code vereinfachen](vscode-oberflaeche.md) — Darstellungsdesign, Aktivitätsleiste und untere Leiste Schritt für Schritt (mit Screenshots).
+
 ---
 
 ## Schritt 3 — PlatformIO in VS Code installieren
@@ -118,6 +120,7 @@ So prüfst du, ob **alles zusammenspielt**, bevor du mit dem Workshop startest.
 
 ## Weiter im Workshop
 
+- **VS Code Oberfläche (optional):** [Oberfläche vereinfachen](vscode-oberflaeche.md)
 - **Komponenten & Verkabelung:** [01 Komponenten](../01_komponenten/README.md) und [Projekt-README](../README.md)
 - **Beispiele:** Ordner `04_beispiele/`
 
