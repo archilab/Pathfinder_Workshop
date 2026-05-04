@@ -96,8 +96,8 @@ Im Header sind **I²C-Register-Adressen** als Enum (`APDS9960_ENABLE`, `APDS9960
 
 ## 6. Workshop-Hinweis
 
-- **Nähe:** `readProximity()` + optional Normalisierung auf 0.0–1.0.  
-- **Gesten:** `enableProximity(true)` + `enableGesture(true)`; `readGesture()`.  
+- **Nähe:** `enableProximity(true)` + `readProximity()` + optional Normalisierung auf 0.0–1.0.  
+- **Gesten:** `enableGesture(true)`; `readGesture()`.  
 - **Licht/Farbe/Lux/Farbtemperatur:** `enableColor(true)`, `getColorData`, `calculateLux` / `calculateColorTemperature`.  
 - **Interrupts:** optional über INT-Pin am Breakout (nicht jeder Workshop-Aufbau verkabelt INT).
 
