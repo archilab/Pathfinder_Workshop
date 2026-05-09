@@ -9,7 +9,7 @@ Dieser Workshop untersucht einen zentralen Paradigmenwechsel:
 Large Language Models fungieren nicht länger nur als Werkzeuge, sondern als **aktive Co-Designer und Übersetzer zwischen Idee und technischer Umsetzung**. Sie transformieren Sprache direkt in funktionale Systeme – vom Sensor bis zur physischen Interaktion.
 
 Am Beispiel des ESP32 wird sichtbar, wie sich diese Entwicklung konkret materialisiert:  
-Teilnehmende beschreiben eine künstlerische oder performative Idee – und ein speziell konfiguriertes GPT-System generiert daraus lauffähigen Code, der unmittelbar auf Hardware übertragen werden kann.
+Teilnehmende beschreiben eine künstlerische oder performative Idee – und ein speziell konfiguriertes custom GPT-System generiert daraus lauffähigen Code, der unmittelbar auf Hardware übertragen werden kann.
 
 Der Fokus liegt dabei nicht auf klassischer Programmierlogik, sondern auf:
 
@@ -144,13 +144,15 @@ Diese Fragen sind kein Nebenthema, sondern Teil der gestalterischen Praxis.
 
 ## 🔗 Custom GPT
 
+Custom GPTs von Open AI liefern signifikant bessere Ergebnisse wenn man als Nutzer eingelogged ist!!
+
 **[→ FOLWANG-PairLink GPT direkt öffnen](https://chatgpt.com/g/g-69b6eda5e8888191b2000af26055b60b-folwang-pairlink-starter)**
 
 **[→ Custom GPT Dataset herunterladen](./GPT_Dataset_Pathfinder.zip)** — System Prompt + alle Trainingsdateien als ZIP
 
 ---
 
-## Der Prozess in drei Schritten
+## Der Workflow in drei Schritten
 
 ```
 1. GPT-Anfrage stellen   →   Idee in Sprache beschreiben
@@ -166,12 +168,12 @@ Kein manuelles Programmieren. Kein Verständnis von Syntax notwendig.
 
 | Abschnitt | Inhalt |
 |---|---|
-| [00 Setup](./00_setup/README.md) | Git, VS Code, PlatformIO, Treiber — Schritt für Schritt |
-| [01 Komponenten](./01_komponenten/README.md) | Alle Bauteile erklärt |
-| [02 PairLink](./02_pairlink/README.md) | Das Netzwerkprotokoll des Workshops |
-| [03 Workflow](./03_workflow/README.md) | Der 3-Schritt-Prozess im Detail · [Beispielprompts](./03_workflow/pathfinder_prompts.md) · [Prompt-Baukasten](./03_workflow/prompt_patterns_baukasten.md) |
-| [04 Beispiele](./04_beispiele/README.md) | Drei vollständige Workflow-Durchläufe |
-| [05 Custom GPT](./05_custom_gpt/README.md) | Wie der GPT funktioniert — und wie du deinen eigenen baust |
+| [00 Setup](./00_setup/README.md) | Git, VS Code, PlatformIO, Treiber — die Installation notwendiger Komponenten Schritt für Schritt erklärt |
+| [01 Komponenten](./01_komponenten/README.md) | Alle elektronischen Bauteile im Detail erklärt |
+| [02 PairLink](./02_pairlink/README.md) | Die Bibliothek für den Datenaustausch zwischen ESP32 Microcontrollern |
+| [03 Workflow](./03_workflow/README.md) | Der Workflow im Detail · [Beispielprompts](./03_workflow/pathfinder_prompts.md) · [Prompt-Baukasten](./03_workflow/prompt_patterns_baukasten.md) |
+| [04 Beispiele](./04_beispiele/README.md) | Drei vollständige Beispiele mit Workflow-Durchläufen |
+| [05 Custom GPT](./05_custom_gpt/README.md) | Wie das Custom GPT funktioniert — und wie man sein eigenes bauen/anpassen kann |
 
 ---
 

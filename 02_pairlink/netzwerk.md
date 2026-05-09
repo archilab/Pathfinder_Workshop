@@ -26,7 +26,7 @@ Der Server ist der Vermittler zwischen den ESP32-Geräten. Er empfängt den Wert
 
 ## Status-LED
 
-Auf jedem Board gibt es eine Status-LED (GPIO 2), die anzeigt, ob das Gerät mit dem Server verbunden ist:
+Auf den meisten ESP32 Boards gibt es eine Status-LED (GPIO 2), die anzeigt, ob das Gerät mit dem Server verbunden ist:
 
 | LED-Zustand | Bedeutung |
 |---|---|
@@ -39,7 +39,7 @@ Auf jedem Board gibt es eine Status-LED (GPIO 2), die anzeigt, ob das Gerät mit
 ## Pairing starten
 
 1. Beide ESP32-Boards mit dem WLAN verbinden (automatisch beim Start)
-2. Auf beiden Boards gleichzeitig den **Pairing-Button (GPIO 0)** drücken
+2. Auf beiden Boards gleichzeitig den **Pairing-Button (GPIO 0) BOOT** drücken
 3. Die Status-LEDs bestätigen das erfolgreiche Pairing
 
 Nach dem Pairing reagiert ein Board auf das andere in Echtzeit.
