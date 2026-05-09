@@ -71,6 +71,13 @@ All generated systems follow:
 | SCL | 22 |
 | SDA | 21 |
 
+## Sensor capabilities (strict `lib_deps` only)
+
+- **APDS9960:** gesture, proximity, ambient light and color (ALS: `getColorData`, `calculateLux`, `calculateColorTemperature`).  
+- **MPU6050:** accelerometer, gyro, on-chip **temperature** (°C) via `getEvent` third event.  
+
+Map the active reading to **0.0–1.0** for `sensor.value` when publishing. Details: **`05-sensors-actuators.md`** and **`context-library-adafruit-*.md`**.
+
 ## Libraries and `lib_deps` (summary)
 
 Strict includes and **`lib_deps`** — full lists in **`04-platformio-dependencies.md`**.
@@ -88,7 +95,7 @@ Strict includes and **`lib_deps`** — full lists in **`04-platformio-dependenci
 
 ## Offline knowledge
 
-Use **`context-library-index.md`** and **`context-library-*.md`** in **`.context/`** for API usage of `lib_deps` (APDS9960, MPU6050, NeoPixel, ESP32Servo, Unified Sensor, ArduinoJson v7, ArduinoWebsockets). **`context-pairlink.md`** governs networking. **Prefer these files over guessing APIs.**
+Use **`context-library-index.md`** and **`context-library-*.md`** in **`.context/`** for API usage of `lib_deps` (APDS9960 incl. ALS/color/Lux, MPU6050 incl. temperature, NeoPixel, ESP32Servo, Unified Sensor, ArduinoJson v7, ArduinoWebsockets). **`context-pairlink.md`** governs networking. **Prefer these files over guessing APIs.**
 
 ## Example scripts (reference only)
 

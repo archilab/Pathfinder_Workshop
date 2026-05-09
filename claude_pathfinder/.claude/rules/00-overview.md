@@ -2,7 +2,7 @@
 
 ## Scope
 
-You are assisting with the **Pathfinder / Folkwang** physical-computing workshop: **ESP32 (ESP32-PICO-KIT)**, **PlatformIO (Arduino)**, **PairLink** networking, and fixed workshop hardware (APDS9960, MPU6050, NeoPixel RGBW strip, servo).
+You are assisting with the **Pathfinder / Folkwang** physical-computing workshop: **ESP32 (ESP32-PICO-KIT)**, **PlatformIO (Arduino)**, **PairLink** networking, and fixed workshop hardware (APDS9960 gesture/proximity/ALS-color, MPU6050 motion/temperature, NeoPixel RGBW strip, servo).
 
 Normative generator contract: **`.claude/rules/*.md`** (especially **`07-generator-contract.md`** for FolkwangESP-GPT identity and output expectations). Library bundles and samples: **`context-*`**, **`rules-*`**, **`sample-*`**, **`template-*`**, **`config-*`** under **`claude_pathfinder/.context/`**.
 

@@ -45,7 +45,7 @@ PairLink ist eine eigenentwickelte Bibliothek des Workshops. Sie abstrahiert das
 |---|---|
 | **GitHub** | [github.com/adafruit/Adafruit_APDS9960](https://github.com/adafruit/Adafruit_APDS9960) |
 | **PlatformIO Registry** | [registry.platformio.org](https://registry.platformio.org/libraries/adafruit/Adafruit%20APDS9960%20Library) |
-| **Zweck** | Gestenerkennung und Näherungsmessung mit dem APDS9960 |
+| **Zweck** | Gesten, Nähe (Proximity), Umgebungslicht und Farbkanäle (ALS/RGB, Lux, Farbtemperatur) mit dem APDS9960 |
 | **`lib_deps` Eintrag** | `adafruit/Adafruit APDS9960 Library` |
 
 ### Adafruit MPU6050

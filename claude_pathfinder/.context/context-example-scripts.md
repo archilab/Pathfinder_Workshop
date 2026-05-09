@@ -60,10 +60,22 @@ So weiß das Modell, dass Punkt 5–8 **Beispiele/Templates** sind und Punkt 1�
 
 ```json
 {
-  "sensor_map": { "gesture": "apds9960", "motion": "mpu6050", "distance": "apds9960" },
+  "sensor_map": {
+    "gesture": "apds9960",
+    "motion": "mpu6050",
+    "distance": "apds9960",
+    "light": "apds9960",
+    "lux": "apds9960",
+    "color": "apds9960",
+    "als": "apds9960",
+    "temperature": "mpu6050",
+    "temp": "mpu6050"
+  },
   "fallback": { "sensor": "gesture" }
 }
 ```
 
 - **`distance`** → selber Chip wie Nähe am APDS9960 (semantisch, nicht separates Bauteil).  
+- **`light` / `lux` / `color` / `als`** → APDS9960 ALS (`enableColor`, `getColorData`, ggf. `calculateLux` / `calculateColorTemperature`).  
+- **`temperature` / `temp`** → MPU6050 On-Chip-Temperatur (`getEvent` drittes Event).  
 - **`fallback.sensor: gesture`** → Default-Pfad entspricht **`rules-meta-layer.md`** (APDS9960 / Geste).

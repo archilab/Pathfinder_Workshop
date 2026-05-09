@@ -180,8 +180,8 @@ Kein manuelles Programmieren. Kein Verständnis von Syntax notwendig.
 ## Im Workshop verwendete Hardware
 
 - ESP32-PICO-KIT (Espressif Entwicklungsboard · ESP32-PICO-D4 · WLAN + BT eingebaut)
-- APDS9960 (Gestensensor)
-- MPU6050 (Bewegungs- und Lagesensor)
+- APDS9960 (Gesten, Nähe, Umgebungslicht und Farbe)
+- MPU6050 (Bewegung, Lage, On-Chip-Temperatur)
 - NeoPixel RGBW LED-Streifen (6 Pixel)
 - Servomotor (0-180 Grad Rotation)
 

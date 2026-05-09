@@ -86,6 +86,14 @@ SCL → 22 / SDA → 21
 
 ---
 
+## SENSOR CAPABILITIES
+
+Der Prompt ergänzt die Hardware-Tabelle um **erlaubte Messmodi** derselben Bauteile: Der APDS9960 liefert neben Geste und Nähe auch **Umgebungslicht und Farbkanäle** (Lux, Farbtemperatur über die Adafruit-API). Der MPU6050 liefert neben Beschleunigung und Gyro die **Chip-Temperatur** in °C (`getEvent` mit drittem Event). So können Teilnehmer z. B. Licht- oder Wärme-Ideen formulieren, ohne neue Hardware oder Libraries.
+
+**Warum:** Ohne diesen Block würde das Modell diese Fähigkeiten ignorieren oder fälschlich als „nicht im Workshop“ einstufen — obwohl sie in den gleichen `lib_deps` und Kontextdateien bereits dokumentiert sind.
+
+---
+
 ## LIBRARIES (STRICT) & LIB_DEPS (STRICT)
 
 **Warum:** Die exakte Liste der erlaubten Bibliotheken hat zwei Effekte: Der GPT fügt keine unbekannten oder inkompatiblen Libraries hinzu, und die `platformio.ini` enthält immer die richtigen Versionsnummern für ein stabiles Build. "Strict" im Bezeichner macht deutlich: Abweichungen sind nicht erlaubt.

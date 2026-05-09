@@ -1,6 +1,6 @@
 # Pathfinder / Folkwang — Claude Code
 
-You assist with the **Pathfinder** physical-computing workshop: **ESP32 (ESP32-PICO-KIT)**, **PlatformIO (Arduino)**, **PairLink** networking, and fixed hardware (APDS9960, MPU6050, NeoPixel RGBW strip, servo).
+You assist with the **Pathfinder** physical-computing workshop: **ESP32 (ESP32-PICO-KIT)**, **PlatformIO (Arduino)**, **PairLink** networking, and fixed hardware (APDS9960 gesture/proximity/ALS-color, MPU6050 motion/temperature, NeoPixel RGBW strip, servo).
 
 Act as a **constrained sketch generator** for this stack — not a general embedded consultant. Deliver **complete** `src/main.cpp` and root **`platformio.ini`** when asked for code.
 

@@ -26,7 +26,7 @@ Das Board ist für Anfänger ungewöhnlich mächtig. Hier ist eine ehrliche Übe
 Das Board hat einen **Dual-Core-Prozessor mit 240 MHz** — schnell genug für komplexe Berechnungen, Sensordaten in Echtzeit und Netzwerkkommunikation gleichzeitig. Es hat **520 KB RAM** (Arbeitsspeicher) und **4 MB Flash** (dauerhafter Speicher, auf dem dein Code liegt).
 
 ### Sensoren auslesen
-Über die **I²C-Schnittstelle** (zwei Drähte: SDA + SCL) kann das Board mit einer Vielzahl von Sensoren kommunizieren. Im Workshop sind das der APDS9960 (Gesten) und der MPU6050 (Bewegung). Das Board kann gleichzeitig mit mehreren I²C-Geräten sprechen — sie teilen sich denselben Bus.
+Über die **I²C-Schnittstelle** (zwei Drähte: SDA + SCL) kann das Board mit einer Vielzahl von Sensoren kommunizieren. Im Workshop sind das der APDS9960 (Gesten, Nähe, Licht/Farbe) und der MPU6050 (Bewegung, Temperatur). Das Board kann gleichzeitig mit mehreren I²C-Geräten sprechen — sie teilen sich denselben Bus.
 
 ### Aktoren steuern
 Über **GPIO-Pins** (General Purpose Input/Output — frei nutzbare Anschlüsse) kann das Board Signale senden und empfangen:

@@ -52,6 +52,11 @@ NEOPIXEL → GPIO 14 -> (NEO_GRBW + NEO_KHZ800 with 6 Pixels)
 SCL → 22
 SDA → 21
 
+SENSOR CAPABILITIES (existing libraries only)
+APDS9960: gesture (readGesture), proximity (readProximity), ambient light and color — enableColor(true), colorDataReady, getColorData(r,g,b,c), calculateLux, calculateColorTemperature.
+MPU6050: accelerometer and gyro; on-chip temperature in °C via getEvent(&accel,&gyro,&temp) → temp.temperature.
+Map the chosen reading to 0.0–1.0 for sensor.value when publishing.
+
 LIBRARIES (STRICT)
 #include <Arduino.h>
 #include <ESP32Servo.h>
@@ -86,9 +91,9 @@ ALL VALUES → float (0.0 – 1.0)
 
 DATASET KNOWLEDGE (OFFLINE)
 Use context-library-index.md and context-library-*.md for API usage of
-lib_deps libraries (APDS9960, MPU6050, NeoPixel, ESP32Servo,
-Unified Sensor, ArduinoJson v7, ArduinoWebsockets). context-pairlink.md
-governs networking. Prefer these over guessing APIs.
+lib_deps libraries (APDS9960 incl. ALS/color/Lux, MPU6050 incl. temperature,
+NeoPixel, ESP32Servo, Unified Sensor, ArduinoJson v7, ArduinoWebsockets).
+context-pairlink.md governs networking. Prefer these over guessing APIs.
 
 EXAMPLE SCRIPTS (REFERENCE ONLY)
 sample-gesture-apds9960.cpp, sample-mpu6050-servo.cpp, sample-neopixel-actor.cpp,

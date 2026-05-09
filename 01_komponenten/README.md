@@ -9,10 +9,10 @@ Der Workshop verwendet fünf Hardware-Komponenten. Du musst nicht verstehen, wie
 | Komponente | Typ | Funktion |
 |---|---|---|
 | [ESP32-PICO-KIT](./esp32_pico.md) | Mikrocontroller | Das Gehirn — führt den Code aus |
-| [APDS9960](./apds9960.md) | Sensor | Erkennt Gesten und Nähe |
-| [MPU6050](./mpu6050.md) | Sensor | Misst Bewegung und Neigung |
+| [APDS9960](./apds9960.md) | Sensor | Gesten, Nähe, Umgebungslicht und Farbe (Library) |
+| [MPU6050](./mpu6050.md) | Sensor | Bewegung, Neigung, Temperatur (Library) |
 | [NeoPixel Strip](./neopixel.md) | Aktor | 6 individuell steuerbare RGB-LEDs |
-| [Servo](./servo.md) | Aktor | Dreht sich auf einen bestimmten Winkel |
+| [Servo](./servo.md) | Aktor | Dreht sich auf einen bestimmten Winkel 0-180° |
 
 ---
 
@@ -20,7 +20,7 @@ Der Workshop verwendet fünf Hardware-Komponenten. Du musst nicht verstehen, wie
 
 Der GPT unterscheidet zwischen zwei Arten von Komponenten:
 
-**Sensoren** nehmen etwas aus der Welt auf — eine Bewegung, eine Geste, eine Neigung — und wandeln es in eine Zahl zwischen `0.0` und `1.0` um.
+**Sensoren** nehmen etwas aus der Welt auf — eine Bewegung, eine Geste, eine Neigung, **Licht oder Farbe**, **Temperatur** — und wandeln es in eine Zahl zwischen `0.0` und `1.0` um.
 
 **Aktoren** reagieren auf eine solche Zahl — sie leuchten heller oder dunkler, drehen sich weiter oder weniger weit.
 

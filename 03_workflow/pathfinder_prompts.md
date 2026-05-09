@@ -42,6 +42,20 @@ Die Bewegung soll direkt und ohne Verzögerung erfolgen.
 
 ---
 
+### Umgebungslicht → Helligkeit (APDS9960)
+```txt
+Die Helligkeit im Raum soll über den APDS9960 gemessen werden und die NeoPixels proportional heller oder dunkler machen.
+```
+
+---
+
+### Temperatur → Farbe (MPU6050)
+```txt
+Die On-Chip-Temperatur des MPU6050 soll die Farbe des LED-Streifens steuern: kälter bläulich, wärmer rötlicher — Werte sinnvoll auf 0.0–1.0 normieren.
+```
+
+---
+
 ## 🟡 Kombination – mehrere Dimensionen koppeln
 
 ### Distanz + Farbe + Rotation

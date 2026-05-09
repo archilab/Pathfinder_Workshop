@@ -8,8 +8,8 @@ Diese Dateien liefern **offlinefähigen API- und Nutzungskontext** für alle in 
 
 | Datei | Bibliothek (PlatformIO) | Rolle im Workshop |
 |-------|-------------------------|-------------------|
-| [context-library-adafruit-apds9960.md](./context-library-adafruit-apds9960.md) | `adafruit/Adafruit APDS9960 Library` | Gesten- / Nähesensor (I²C) |
-| [context-library-adafruit-mpu6050.md](./context-library-adafruit-mpu6050.md) | `adafruit/Adafruit MPU6050` | Beschleunigung / Gyro (I²C) |
+| [context-library-adafruit-apds9960.md](./context-library-adafruit-apds9960.md) | `adafruit/Adafruit APDS9960 Library` | Gesten, Nähe, Umgebungslicht / Farbe (ALS, I²C) |
+| [context-library-adafruit-mpu6050.md](./context-library-adafruit-mpu6050.md) | `adafruit/Adafruit MPU6050` | Beschleunigung, Gyro, Temperatur (I²C) |
 | [context-library-adafruit-neopixel.md](./context-library-adafruit-neopixel.md) | `adafruit/Adafruit NeoPixel@^1.12.5` | RGBW-LED-Streifen (GPIO-Daten) |
 | [context-library-esp32servo.md](./context-library-esp32servo.md) | `madhephaestus/ESP32Servo@^3.0.8` | Servo (PWM) |
 | [context-library-adafruit-unified-sensor.md](./context-library-adafruit-unified-sensor.md) | `adafruit/Adafruit Unified Sensor@^1.1.15` | `sensors_event_t` für MPU6050 |

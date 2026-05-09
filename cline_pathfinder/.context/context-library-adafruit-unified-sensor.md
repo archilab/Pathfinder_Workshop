@@ -81,4 +81,4 @@ Gemeinsamer Kopf:
 
 ## 6. APDS9960
 
-Nutzt im Workshop typischerweise die **direkte** `Adafruit_APDS9960`-API (`readProximity` etc.), **nicht** den Unified-Sensor-Pfad — trotzdem kann `sensors_type_t` / `distance`/`light` in anderen Projekten relevant sein.
+Nutzt im Workshop die **direkte** `Adafruit_APDS9960`-API — **nicht** den Unified-Sensor-Pfad: Gesten/Proximity (`readGesture`, `readProximity`) und bei Bedarf **Licht/Farbe** (`enableColor`, `getColorData`, `calculateLux`, `calculateColorTemperature`).

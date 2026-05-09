@@ -68,6 +68,11 @@ NEOPIXEL → GPIO 14 -> (NEO_GRBW + NEO_KHZ800 with 6 Pixels)
 SCL → 22
 SDA → 21
 
+SENSOR CAPABILITIES (existing libraries only)
+APDS9960: gesture (readGesture), proximity (readProximity), ambient light and color — enableColor(true), colorDataReady, getColorData(r,g,b,c), calculateLux, calculateColorTemperature.
+MPU6050: accelerometer and gyro; on-chip temperature in °C via getEvent(&accel,&gyro,&temp) → temp.temperature.
+Map the chosen reading to 0.0–1.0 for sensor.value when publishing.
+
 LIBRARIES (STRICT)
 #include <Arduino.h>
 #include <ESP32Servo.h>
@@ -102,9 +107,9 @@ ALL VALUES → float (0.0 – 1.0)
 
 DATASET KNOWLEDGE (OFFLINE)
 Use context-library-index.md and context-library-*.md for API usage of
-lib_deps libraries (APDS9960, MPU6050, NeoPixel, ESP32Servo,
-Unified Sensor, ArduinoJson v7, ArduinoWebsockets). context-pairlink.md
-governs networking. Prefer these over guessing APIs.
+lib_deps libraries (APDS9960 incl. ALS/color/Lux, MPU6050 incl. temperature,
+NeoPixel, ESP32Servo, Unified Sensor, ArduinoJson v7, ArduinoWebsockets).
+context-pairlink.md governs networking. Prefer these over guessing APIs.
 
 EXAMPLE SCRIPTS (REFERENCE ONLY)
 sample-gesture-apds9960.cpp, sample-mpu6050-servo.cpp, sample-neopixel-actor.cpp,
@@ -133,6 +138,8 @@ always generate zip-file with valid platformIO folder structure and all scripts 
 ## B. Meta + validation (from `rules-meta-layer.md` & `rules-validation.md`)
 
 - Default sensor narrative: **APDS9960 (gesture)**.
+- **APDS9960** may use **light / color / Lux** (`enableColor`, `getColorData`, `calculateLux`, `calculateColorTemperature`) when the user asks.
+- **MPU6050** may use **temperature °C** (`getEvent` third argument) when the user asks.
 - **Never `analogRead`** unless the user explicitly asks.
 - Unified channel: **`sensor.value`** only (no `actor.value`).
 - Enforce **strict `lib_deps`** / `platformio.ini`.
@@ -169,7 +176,13 @@ lib_deps =
   "sensor_map": {
     "gesture": "apds9960",
     "motion": "mpu6050",
-    "distance": "apds9960"
+    "distance": "apds9960",
+    "light": "apds9960",
+    "lux": "apds9960",
+    "color": "apds9960",
+    "als": "apds9960",
+    "temperature": "mpu6050",
+    "temp": "mpu6050"
   },
   "fallback": {
     "sensor": "gesture"
@@ -196,7 +209,7 @@ lib_deps =
 
 | Library | Include / type | Workshop essentials |
 |--------|----------------|---------------------|
-| **APDS9960** | `Adafruit_APDS9960` | `begin()`, `enableGesture(true)`, `enableProximity(true)`, `readGesture()` → `APDS9960_UP/DOWN/LEFT/RIGHT`, `readProximity()` (8-bit). I²C **`Wire.begin(21,22)`**. |
+| **APDS9960** | `Adafruit_APDS9960` | `begin()`, `enableGesture(true)`, `enableProximity(true)`, `readGesture()` → `APDS9960_UP/DOWN/LEFT/RIGHT`, `readProximity()` (8-bit). **Light/color:** `enableColor(true)`, `colorDataReady()`, `getColorData(&r,&g,&b,&c)`, `calculateLux`, `calculateColorTemperature`. I²C **`Wire.begin(21,22)`**. |
 | **MPU6050** | `Adafruit_MPU6050` + `Adafruit_Sensor` | `begin()`, `getEvent(&a,&g,&temp)` → **`a.acceleration.{x,y,z}`** m/s², **`g.gyro.*`** rad/s, **`temp.temperature`** °C. |
 | **NeoPixel** | `Adafruit_NeoPixel` | **`strip(6, 14, NEO_GRBW + NEO_KHZ800)`**, `begin()`, `setPixelColor`, **`show()`**. |
 | **ESP32Servo** | `Servo` from `ESP32Servo.h` | **`attach(12)`**, **`write(0–180)`** (or map from 0–1). |

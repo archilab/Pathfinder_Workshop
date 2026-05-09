@@ -2,11 +2,12 @@
 
 Full API: [`context-library-index.md`](../../.context/context-library-index.md).
 
-## APDS9960 (gesture / proximity)
+## APDS9960 (gesture / proximity / light & color)
 
 - `Adafruit_APDS9960 apds;` → `apds.begin()`, then `enableProximity(true)` / `enableGesture(true)` as needed.
 - Gestures: `uint8_t g = apds.readGesture();` → constants `APDS9960_UP`, `DOWN`, `LEFT`, `RIGHT` (or 0).
 - Proximity: `readProximity()` — 8-bit raw; map to 0.0–1.0 in application logic.
+- Light / color (ALS): `enableColor(true)`; when `colorDataReady()`, `getColorData(&r,&g,&b,&c)` then `calculateLux(r,g,b)` and/or `calculateColorTemperature(r,g,b)`; normalize for `sensor.value` as needed.
 
 ## MPU6050 + Unified Sensor
 

@@ -3,7 +3,8 @@
 Stable workshop release.
 
 Includes:
-- gesture-based default input (APDS9960)
+- gesture-based default input (APDS9960); optional ALS/light/color and Lux on same sensor
+- MPU6050 motion plus on-chip temperature via Unified Sensor events
 - unified PairLink channel (sensor.value)
 - multi-node interaction (swarm + smoothing)
 - enforced PlatformIO dependencies

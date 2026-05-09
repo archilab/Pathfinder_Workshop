@@ -16,7 +16,7 @@
 
 ## Routing semantics (optional)
 
-Sensor aliases for intent: see [`config-routing.json`](../../.context/config-routing.json) (`gesture` → APDS9960, `motion` → MPU6050, `distance` → APDS9960 proximity; default fallback `gesture`).
+Sensor aliases for intent: see [`config-routing.json`](../../.context/config-routing.json) (`gesture` → APDS9960, `motion` → MPU6050, `distance` → APDS9960 proximity, `light`/`lux`/`color`/`als` → APDS9960 ALS, `temperature`/`temp` → MPU6050; default fallback `gesture`).
 
 ## Sample code priority
 
